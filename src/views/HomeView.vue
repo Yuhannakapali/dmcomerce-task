@@ -1,6 +1,6 @@
 <template>
   <div>
-      home view
+    <h1>home view</h1>
   </div>
 </template>
 
@@ -8,14 +8,10 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  setup () {
-    
-
+  setup() {
     return {}
   }
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
