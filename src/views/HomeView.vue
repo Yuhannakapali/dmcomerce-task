@@ -1,8 +1,21 @@
-<script setup lang="ts">
+<template>
+  <div>
+      home view
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  setup () {
+    
+
+    return {}
+  }
+})
 </script>
 
-<template>
-  <main>
-    
-  </main>
-</template>
+<style scoped>
+
+</style>
