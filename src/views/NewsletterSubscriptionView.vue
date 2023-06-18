@@ -38,6 +38,7 @@
 
 <script lang="ts">
 import { onMounted, ref } from 'vue'
+import { useLoading } from 'vue-loading-overlay'
 import { useNewsletterStore } from '@/stores/NewsLetter'
 import type { INewsletterSubscription } from '../interface/NewsletterSubscription'
 
@@ -46,6 +47,10 @@ export default {
     const form = ref({} as INewsletterSubscription)
     const formData = ref({} as any)
     const store = useNewsletterStore()
+    const $loading = useLoading({
+      // options
+      isFullPage: true
+    })
 
     const simulateApi = (): Promise<INewsletterSubscription> => {
       return new Promise((resolve) => {
@@ -90,10 +95,12 @@ export default {
     onMounted(async () => {
       let data: INewsletterSubscription
       if (!store.dataHasSet) {
+        let loader = $loading.show({})
         data = await simulateApi()
         if (data) {
           store.setData(data)
         }
+        loader.hide()
       } else {
         data = store.data
       }

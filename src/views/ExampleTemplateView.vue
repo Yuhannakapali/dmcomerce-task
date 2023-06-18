@@ -34,13 +34,18 @@
 import { onMounted, ref } from 'vue'
 import { useEmailTemplateStore } from '@/stores/ExampleTemplate'
 import type { IEmailTemplate } from '../interface/EmailTemplate'
+import { useLoading } from 'vue-loading-overlay'
 
 export default {
   setup() {
     const form = ref({} as IEmailTemplate)
     const formData = ref({} as any)
     const store = useEmailTemplateStore()
-
+    // const load = ref(false)
+    const $loading = useLoading({
+      // options
+      isFullPage: true
+    })
     const simulateApi = (): Promise<IEmailTemplate> => {
       return new Promise((resolve) => {
         setTimeout(() => {
@@ -84,7 +89,9 @@ export default {
     onMounted(async () => {
       let data: IEmailTemplate
       if (!store.hasDataBeenSet) {
+        let loader = $loading.show({})
         data = await simulateApi()
+        loader.hide()
         store.setData(data)
       } else {
         data = store.getData
