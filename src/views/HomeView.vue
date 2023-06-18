@@ -2,7 +2,7 @@
   <div class="container d-flex justify-content-center">
     <div class="">
       <h5 class="text-center title text-underlined tuo-8">Dmcommerce Task</h5>
-      <p class="">
+      <p class="description">
         The task involves creating a Vue 3 application with two routes: "example—template" and
         "newsletter—subscription" . A simple menu to navigate between the two routes should be
         always visible When a route is loaded, the application should make an API call to obtain a
