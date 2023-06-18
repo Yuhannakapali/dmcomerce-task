@@ -32,12 +32,17 @@ a:link {
   }
 }
 
+.nav-link{
+ color: #042d58 !important;
+}
 
 
 .btn-submit {
   color: white !important;
   background-color: #ff7d1b !important;
-  padding: 5px 30px !important;
+  padding: 2px 25px !important;
+  font-weight: 700 !important;
+  font-size: 19px !important;
 }
 
 .cursor-pointer {
@@ -45,7 +50,6 @@ a:link {
 }
 
 .title{
-  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -53,7 +57,6 @@ a:link {
 .sub-title{
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 
 .checkbox-container{
@@ -63,4 +66,38 @@ a:link {
 .checkbox-label{
   font-size: 16px;
   font-weight: 700;
+}
+
+.mockup-image{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.branding{
+  color: #042d58 !important;
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.text-underlined{
+  text-decoration: underline;
+}
+
+.lp-2{
+  letter-spacing: 2px;
+}
+
+.tuo-8{
+  text-underline-offset: 5px;
+}
+
+.branding-subtitle{
+  color: grey !important;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: -14px;
+  letter-spacing: -0.5px;
 }
