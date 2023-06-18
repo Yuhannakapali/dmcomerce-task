@@ -41,9 +41,7 @@ export default {
     const form = ref({} as IEmailTemplate)
     const formData = ref({} as any)
     const store = useEmailTemplateStore()
-    // const load = ref(false)
     const $loading = useLoading({
-      // options
       isFullPage: true
     })
     const simulateApi = (): Promise<IEmailTemplate> => {
