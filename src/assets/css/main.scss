@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 * {
@@ -8,8 +8,59 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
-a {
+a:link {
   text-decoration: none;
-  color: inherit;
+  color: black;
+}
+
+.custom-field {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  border-radius: 6px;
+  width: 400px;
+  height: 50px;
+  outline: none;
+  font-size: 16px;
+  padding: 0 18px;
+
+  &::placeholder {
+    color: #b3b3b3;
+  }
+}
+
+
+
+.btn-submit {
+  color: white !important;
+  background-color: #ff7d1b !important;
+  padding: 5px 30px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sub-title{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.checkbox-container{
+  width: 600px;
+}
+
+.checkbox-label{
+  font-size: 16px;
+  font-weight: 700;
 }

@@ -1,17 +1,17 @@
 <template>
-  <div class="container d-flex justify-content-between mt-2">
+  <div class="container d-flex justify-content-between p-3">
     <div class="branding">
-      <h2>
-        <RouterLink to="/">Dmcommerce</RouterLink>
-      </h2>
+      <RouterLink to="/">
+        <h2 style="font-weight: 400; font-style: italic">Dmcommerce</h2>
+      </RouterLink>
     </div>
     <nav>
       <b-nav>
         <b-nav-item>
-          <RouterLink to="/example-template"> Example Template</RouterLink>
+          <RouterLink to="/example-template"><h6>Example Template</h6> </RouterLink>
         </b-nav-item>
         <b-nav-item>
-          <RouterLink to="/newsletter-subscription">Newsletter Subscription</RouterLink>
+          <RouterLink to="/newsletter-subscription"><h6>Newsletter Subscription</h6></RouterLink>
         </b-nav-item>
       </b-nav>
     </nav>

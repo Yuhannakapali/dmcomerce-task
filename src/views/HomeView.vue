@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>home view</h1>
+  <div class="container vh-100 d-flex justify-content-center">
+    <p>This was task given by the Dmcommerce</p>
   </div>
 </template>
 
